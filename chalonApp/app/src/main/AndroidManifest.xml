@@ -10,8 +10,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ChalonApp"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
         android:usesCleartextTraffic="true">
+        <activity android:name=".activity_loginuser"></activity>
         <activity
             android:name=".activity_reserva"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />

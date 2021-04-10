@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "692658248172",
+    "firebase_url": "https://chalonapplogin-default-rtdb.firebaseio.com",
+    "project_id": "chalonapplogin",
+    "storage_bucket": "chalonapplogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692658248172:android:6b041695e887f5aa6108c9",
+        "android_client_info": {
+          "package_name": "com.example.chalonapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692658248172-fnua1n8tnklq62ojdop36uo03mccsdau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXL6sjO4Il7-H0ZMVdvKejgs4QMesifLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692658248172-fnua1n8tnklq62ojdop36uo03mccsdau.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
