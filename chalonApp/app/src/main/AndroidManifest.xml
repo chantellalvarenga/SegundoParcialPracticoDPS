@@ -12,8 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChalonApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity_reserva"></activity>
-        <activity android:name=".activity_selecion" />
+        <activity
+            android:name=".activity_reserva"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activity_selecion"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".LoginActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
