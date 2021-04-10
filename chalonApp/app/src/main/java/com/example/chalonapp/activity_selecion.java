@@ -46,7 +46,7 @@ public class activity_selecion extends AppCompatActivity {
         int id = 0;
         id = VerificarUser(nombres, apellidos);
 
-        //Bienvida al Usuario
+        //Bienvenida al Usuario
         txtBienvenidaUser.setText("Bienvenido: " + nombres + " " + apellidos);
 
         //Si no existe en BD lo crea
@@ -61,18 +61,13 @@ public class activity_selecion extends AppCompatActivity {
 
     private List<Tratamiento> GetData() {
         SqlLiteOpenHelperAdmin admin = new SqlLiteOpenHelperAdmin(this,"chalon_database",null,1);
-
         SQLiteDatabase database = admin.getReadableDatabase();
-
         ArrayList<Tratamiento> listItem = new ArrayList<>();
-
-
 
         Cursor fila = database.rawQuery("select id, nombre, precio, img_url from tratamientos ",null);
 
         if(fila.moveToFirst())
         {
-
             do {
                 //Llenando las listas
                 listItem.add(new Tratamiento(fila.getInt(0),fila.getString(1),fila.getDouble(2),fila.getString(3)));
