@@ -12,21 +12,22 @@
         android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/txtNombre_tratamiento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="TextView"
+        android:textColor="#171313"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toEndOf="@+id/imageViewTratamiento"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,25 +35,30 @@
         android:id="@+id/text_precio_tratamiento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="$0.00"
+        android:textColor="#191414"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btnReservar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toEndOf="@+id/imageViewTratamiento"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre_tratamiento"
-        app:layout_constraintVertical_bias="0.444" />
+        app:layout_constraintVertical_bias="0.368" />
 
     <Button
         android:id="@+id/btnReservar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#FFB7A6"
+        android:minHeight="38dip"
         android:onClick="Reservar"
         android:text="@string/reservar"
+        android:textColor="#090606"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toEndOf="@+id/imageViewTratamiento"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre_tratamiento"
-        app:layout_constraintVertical_bias="0.857" />
+        app:layout_constraintVertical_bias="0.676" />
 </androidx.constraintlayout.widget.ConstraintLayout>

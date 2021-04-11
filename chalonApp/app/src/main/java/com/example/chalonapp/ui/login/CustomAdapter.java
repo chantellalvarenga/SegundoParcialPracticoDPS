@@ -71,7 +71,7 @@ public class CustomAdapter extends BaseAdapter {
                     .into(imageTratamiento);
 
             TxtNombre.setText(item.getNombre());
-            TxtPrecio.setText(String.valueOf(item.getPrecio()));
+            TxtPrecio.setText("$ " + String.valueOf(item.getPrecio()));
 
 
 btn_reserva.setOnClickListener(new View.OnClickListener() {

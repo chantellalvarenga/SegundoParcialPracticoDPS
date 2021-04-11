@@ -31,4 +31,7 @@
     <string name="googleaccount_label">Cerrar cuenta google</string>
     <string name="deletegoogle_label">Eliminar cuenta google</string>
 
+    <string name="report_planned_date">Fecha</string>
+
+
 </resources>

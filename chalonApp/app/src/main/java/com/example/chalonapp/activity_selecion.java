@@ -68,7 +68,7 @@ public class activity_selecion extends AppCompatActivity {
         id = VerificarUser(nombres, apellidos);
 
         //Bienvenida al Usuario
-        txtBienvenidaUser.setText("Bienvenido: " + nombres + " " + apellidos);
+        txtBienvenidaUser.setText("Bienvenida/o: " + nombres + " " + apellidos);
 
         //Si no existe en BD lo crea
        if(id == 0)

@@ -5,18 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.chalonapp.data.model.Cliente;
-import com.example.chalonapp.data.model.Tratamiento;
-
 public class activity_reserva extends AppCompatActivity {
-TextView textView;
+
+    TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserva);
 
         //Declaración de variables a utilizar
-        textView=findViewById(R.id.textView_reserva);
+        textView = findViewById(R.id.tv_reserva);
 
         //Obtenemos datos del usuario y del tratamiento seleccionado
         Bundle bundle = getIntent().getExtras();
@@ -43,6 +42,8 @@ TextView textView;
                             "\n Precio: " + String.valueOf(precio_tratamiento);
 
            textView.setText(mensaje);
+
+           //
     }
 
 }

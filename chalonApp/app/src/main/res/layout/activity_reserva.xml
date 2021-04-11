@@ -6,23 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".activity_reserva">
 
-    <TextView
-        android:id="@+id/textView_reserva"
-        android:layout_width="341dp"
-        android:layout_height="245dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
-        android:text="@string/aceptar_re"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/tv_reserva"
+            android:layout_width="326dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="50dp"
+            android:text="datosReserva"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etPlannedDate"
+            android:hint="@string/report_planned_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:focusable="false"
+            android:clickable="true"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="200dp"
+            android:text="@string/aceptar_re" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

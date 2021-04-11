@@ -6,23 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".activity_selecion">
 
-    <TextView
-        android:id="@+id/txtBienvenidaUser"
-        android:layout_width="256dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="24dp"
-        android:hint="Bienvenido"
-        android:text="Bienvenido"
-        android:textAlignment="center"
-        android:textColor="#12151C"
-        android:textColorHint="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/txtBienvenidaUser"
+            android:layout_width="261dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="15dp"
+            android:hint="Bienvenido"
+            android:text="Bienvenido"
+            android:textAlignment="center"
+            android:textColor="#12151C"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvTratamientos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTratamientos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="8dp"
+            android:text="Tratamientos"
+            android:textColor="#0C0C0C"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <View
+            android:id="@+id/dividerTratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/black"
+            android:minWidth="0dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="412dp"
+            android:layout_height="642dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
     <ListView
         android:id="@+id/listView1"
         android:layout_width="409dp"
@@ -66,4 +106,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
+        </ListView>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

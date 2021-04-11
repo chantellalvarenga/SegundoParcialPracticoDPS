@@ -5,6 +5,7 @@ public class Cita {
     int id_cliente;
     int id_tratamiento;
     String fecha;
+    String hora;
     String estado;
 
 }
