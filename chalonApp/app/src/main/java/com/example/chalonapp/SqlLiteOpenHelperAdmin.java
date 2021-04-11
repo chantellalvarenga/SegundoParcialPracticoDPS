@@ -32,6 +32,7 @@ public class SqlLiteOpenHelperAdmin extends SQLiteOpenHelper{
     private static final String KEY_CITAS_ID_CLIENTE = "id_cliente";
     private static final String KEY_CITAS_ID_TRATAMIENTO = "id_tratamiento";
     private static final String KEY_CITAS_FECHA="fecha";
+    private static final String KEY_CITAS_HORA="hora";
     private static final String KEY_CITAS_ESTADO="estado";
 
     public SqlLiteOpenHelperAdmin(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
@@ -60,6 +61,7 @@ public class SqlLiteOpenHelperAdmin extends SQLiteOpenHelper{
                 KEY_CITAS_ID_TRATAMIENTO+" INTEGER,"+
                 KEY_CITAS_ESTADO+" TEXT,"+
                 KEY_CITAS_FECHA+" TEXT,"+
+                KEY_CITAS_HORA+"TEXT,"+
                 "FOREIGN KEY("+KEY_CITAS_ID_CLIENTE+") references "+TABLE_CLIENTES+""+"("+KEY_CLIENTE_ID+"),"+
                 "FOREIGN KEY("+KEY_CITAS_ID_TRATAMIENTO+") references "+TABLE_TRATAMIENTOS+""+"("+KEY_TRATAMIENTOS_ID+")"+
                 ")";
@@ -75,10 +77,10 @@ public class SqlLiteOpenHelperAdmin extends SQLiteOpenHelper{
         final String Insert_Data2="INSERT INTO tratamientos VALUES(2,'Mechas',25.0,'https://estaticos.marie-claire.es/uploads/images/gallery/5f4380475cafe803dc7e24a5/mechas-foilayage_0.jpg')";
         db.execSQL(Insert_Data2);
         //Tratamiento 3
-        final String Insert_Data3="INSERT INTO tratamientos VALUES(3,'Decoloracion',20.0,'https://ath2.unileverservices.com/wp-content/uploads/sites/11/2019/05/decoloracion-de-pelo-2.jpg')";
+        final String Insert_Data3="INSERT INTO tratamientos VALUES(3,'Decoloración',20.0,'https://ath2.unileverservices.com/wp-content/uploads/sites/11/2019/05/decoloracion-de-pelo-2.jpg')";
         db.execSQL(Insert_Data3);
         //Tratamiento 4
-        final String Insert_Data4="INSERT INTO tratamientos VALUES(4,'Hidratacion',15.0,'https://149363200.v2.pressablecdn.com/wp-content/uploads/2016/10/Depositphotos_6140245_m-2015-e1481917306675.jpg')";
+        final String Insert_Data4="INSERT INTO tratamientos VALUES(4,'Hidratación',15.0,'https://149363200.v2.pressablecdn.com/wp-content/uploads/2016/10/Depositphotos_6140245_m-2015-e1481917306675.jpg')";
         db.execSQL(Insert_Data4);
         //Tratamiento 5
         final String Insert_Data5="INSERT INTO tratamientos VALUES(5,'Botox capilar',22.0,'https://www.onmujer.com/wp-content/uploads/2018/11/botox-capilar.jpg')";
