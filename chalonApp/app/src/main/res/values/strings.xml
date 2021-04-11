@@ -12,5 +12,23 @@
     <string name="go_selections">"Ir a ver tratamientos"</string>
     <string name="reservar">"Reservar"</string>
     <string name="aceptar_re">Confirmar reserva</string>
+    <string name="login_label">Perfeccionando tu belleza</string>
+    <string name="loginbutton_label">Ingresar</string>
+    <string name="register_label">Aún no tienes cuenta? Registrate</string>
+    <string name="google_label">Ingresar con Google</string>
+    <string name="userlogin_label">Complete los campos</string>
+
+    <!-- Strings related to new user login -->
+    <string name="name_label">Nombre</string>
+    <string name="sname_label">Apellido</string>
+    <string name="registeruser_label">Registrar</string>
+    <string name="return_label">Volver</string>
+    <string name="wrong_mail">Correo electrónico inválido</string>
+    <string name="wrong_pass">Contraseña inválida</string>
+
+    <!-- Strings related to dashboard -->
+    <string name="fireaccount_label">Cerrar cuenta firebase</string>
+    <string name="googleaccount_label">Cerrar cuenta google</string>
+    <string name="deletegoogle_label">Eliminar cuenta google</string>
 
 </resources>
